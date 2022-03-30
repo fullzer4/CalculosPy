@@ -1,3 +1,4 @@
+import math
 TipoMatrizX = (input("Qual e seu tipo de matriz x? (ex 2:2): "))
 
 if TipoMatrizX == "1:1":
@@ -98,18 +99,36 @@ print("")
 Calculos = (input(""))
 
 if Calculos == "multiplicacao":
-    if (TipoMatrizX == "2:2", TipoMatrizY == "2:2"):
+    if (TipoMatrizX == "1:1", TipoMatrizY == "1:1"): #verificar
+        Col1Lin1Total = Col1Lin1x * Col1Lin1y
+        print("")
+        Total = print(Col1Lin1Total)
+
+    elif (TipoMatrizX == "1:1", TipoMatrizY == "1:2"): #verificar #errado
+        Col1Lin1Total = Col1Lin1x * Col1Lin1y
+        Col2Lin1Total = Col2Lin1y * Col1Lin1x
+        print (Col1Lin1Total, Col2Lin1Total)
+        print("")
+        Total = print(Col1Lin1Total, Col2Lin1Total)
+
+    elif (TipoMatrizX == "2:2", TipoMatrizY == "2:2"): #pronto
         Col1Lin1semi1 = Col1Lin1x * Col1Lin1y
         Col1Lin1semi2 = Col2Lin1x * Col1Lin2y
         Col1Lin1Total = Col1Lin1semi1 + Col1Lin1semi2
 
-        #Col1Lin2semi1 = 
-        #Col1Lin2semi2 = 
-        #Col1Lin2Total = 
-
-        Col2Lin1semi1 = Col1Lin2x * Col2Lin1y
-        Col2Lin1semi2 = Col2Lin2x * Col2Lin2y
+        Col2Lin1semi1 = Col2Lin1y * Col1Lin1x
+        Col2Lin1semi2 = Col2Lin2y * Col2Lin1x
         Col2Lin1Total = Col2Lin1semi1 + Col2Lin1semi2
-        Total = print(Col1Lin1Total)
-        Total = print(Col2Lin1Total)
+
+        Col1Lin2semi1 = Col1Lin2x * Col2Lin1y
+        Col1Lin2semi2 = Col2Lin2x * Col2Lin2y
+        Col1Lin2Total = Col1Lin2semi1 + Col1Lin2semi2
+
+        Col2Lin2semi1 = Col2Lin2y * Col1Lin1x
+        Col2Lin2semi2 = Col2Lin1y * Col2Lin1x
+        Col2Lin2Total = Col2Lin2semi1 + Col2Lin2semi2
+
+        print("")
+        Total = print(Col1Lin1Total, Col2Lin1Total)
+        Total = print(Col1Lin2Total, Col2Lin2Total)
 
