@@ -1,134 +1,120 @@
 import math
-TipoMatrizX = (input("Qual e seu tipo de matriz x? (ex 2:2): "))
 
-if TipoMatrizX == "1:1":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    print(Col1Lin1x)
+C1L1X = 0
+C2L1X = 0
+C3L1X = 0
+C4L1X = 0
+C5L1X = 0
+
+#termino x
+
+C1L1Y = 0
+C2L1Y = 0
+C3L1Y = 0
+C4L1Y = 0
+C5L1Y = 0
+
+#termino y
+
+#============================================================================
+#
+#                          termino do pre defincoes
+#
+#============================================================================
+
+TipoMX = input("Qual é seu tipo de Martriz X: ex(2:2) ")
+
+if TipoMX == "1:1":
+    C1L1X = input("Qual é numero na linha 1 coluna 1? ")
     print("")
+    print(C1L1X)
 
-elif TipoMatrizX == "1:2":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1x = int(input("Qual e o numero da linha 1 coluna 2: "))
-    print(Col1Lin1x, Col2Lin1x)
+elif TipoMX == "1:2":
+    C1L1X = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1X = input("Qual é numero na linha 1 coluna 2? ")
     print("")
+    print(C1L1X, C2L1X)
 
-elif TipoMatrizX == "1:3":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1x = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col3Lin1x = int(input("Qual e o numero da linha 1 coluna 3: "))
-    print(Col1Lin1, Col2Lin1, Col3Lin1)
+elif TipoMX == "1:3":
+    C1L1X = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1X = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1X = input("Qual é numero na linha 1 coluna 3? ")
     print("")
+    print(C1L1X, C2L1X, C3L1X)
 
-elif TipoMatrizX == "2:1":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col1Lin2x = int(input("Qual e o numero da linha 1 coluna 2: "))
-    print(Col1Lin1x, Col1Lin2x)
+elif TipoMX == "1:4":
+    C1L1X = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1X = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1X = input("Qual é numero na linha 1 coluna 3? ")
+    C4L1X = input("Qual é numero na linha 1 coluna 4? ")
     print("")
+    print(C1L1X, C2L1X, C3L1X, C4L1X)
 
-elif TipoMatrizX == "2:2":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1x = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col1Lin2x = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col2Lin2x = int(input("Qual e o numero da linha 2 coluna 2: "))
-    print(Col1Lin1x, Col2Lin1x)
-    print(Col1Lin2x, Col2Lin2x)
-    print("") #arrumado
-
-elif TipoMatrizX == "2:3":
-    Col1Lin1x = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col1Lin2x = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col2Lin1x = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col2Lin2x = int(input("Qual e o numero da linha 2 coluna 2: "))
-    Col3Lin1x = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col3Lin2x = int(input("Qual e o numero da linha 2 coluna 2: "))
-    print(Col1Lin1x, Col1Lin2x, Col2Lin1x, Col2Lin2x, Col3Lin1x, Col3Lin2x)
+elif TipoMX == "1:5":
+    C1L1X = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1X = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1X = input("Qual é numero na linha 1 coluna 3? ")
+    C4L1X = input("Qual é numero na linha 1 coluna 4? ")
+    C5L1X = input("Qual é numero na linha 1 coluna 5? ")
     print("")
+    print(C1L1X, C2L1X, C3L1X, C4L1X, C5L1X)
 
-#ate aqui Tipo de Matriz X
+#============================================================================
+#
+#                               termino do X
+#
+#============================================================================
 
-TipoMatrizY = (input("Qual e seu tipo de matriz y? (ex 2:2): "))
+TipoMY = input("Qual é seu tipo de Martriz Y:")
 
-if TipoMatrizY == "1:1":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    print(Col1Lin1y)
+if TipoMY == "1:1":
+    C1L1Y = input("Qual é numero na linha 1 coluna 1? ")
     print("")
+    print(C1L1Y)
 
-elif TipoMatrizY == "1:2":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1y = int(input("Qual e o numero da linha 1 coluna 2: "))
-    print(Col1Lin1y, Col2Lin1y)
+elif TipoMY == "1:2":
+    C1L1Y = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1Y = input("Qual é numero na linha 1 coluna 2? ")
     print("")
+    print(C1L1Y, C2L1Y)
 
-elif TipoMatrizY == "1:3":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1y = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col3Lin1y = int(input("Qual e o numero da linha 1 coluna 3: "))
-    print(Col1Lin1y, Col2Lin1y, Col3Lin1y)
+elif TipoMY == "1:3":
+    C1L1Y = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1Y = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1Y = input("Qual é numero na linha 1 coluna 3? ")
     print("")
+    print(C1L1Y, C2L1Y, C3L1Y)
 
-elif TipoMatrizY == "2:1":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col1Lin2y = int(input("Qual e o numero da linha 1 coluna 2: "))
-    print(Col1Lin1y, Col1Lin2y)
+elif TipoMY == "1:4":
+    C1L1Y = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1Y = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1Y = input("Qual é numero na linha 1 coluna 3? ")
+    C4L1Y = input("Qual é numero na linha 1 coluna 4? ")
     print("")
+    print(C1L1Y, C2L1Y, C3L1Y, C4L1Y)
 
-elif TipoMatrizY == "2:2":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col2Lin1y = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col1Lin2y = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col2Lin2y = int(input("Qual e o numero da linha 2 coluna 2: "))
-    print(Col1Lin1y, Col2Lin1y)
-    print(Col1Lin2y, Col2Lin2y)
-    print("") #arrumado
-
-elif TipoMatrizY == "2:3":
-    Col1Lin1y = int(input("Qual e o numero da linha 1 coluna 1: "))
-    Col1Lin2y = int(input("Qual e o numero da linha 1 coluna 2: "))
-    Col2Lin1y = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col2Lin2y = int(input("Qual e o numero da linha 2 coluna 2: "))
-    Col3Lin1y = int(input("Qual e o numero da linha 2 coluna 1: "))
-    Col3Lin2y = int(input("Qual e o numero da linha 2 coluna 2: "))
-    print(Col1Lin1y, Col1Lin2y, Col2Lin1y, Col2Lin2y, Col3Lin1y, Col3Lin2y)
+elif TipoMY == "1:5":
+    C1L1Y = input("Qual é numero na linha 1 coluna 1? ")
+    C2L1Y = input("Qual é numero na linha 1 coluna 2? ")
+    C3L1Y = input("Qual é numero na linha 1 coluna 3? ")
+    C4L1Y = input("Qual é numero na linha 1 coluna 4? ")
+    C5L1Y = input("Qual é numero na linha 1 coluna 5? ")
     print("")
+    print(C1L1Y, C2L1Y, C3L1Y, C4L1Y, C5L1Y)
 
-#ate aqui Tipo de Matriz Y
+#============================================================================
+#
+#                               termino do Y
+#
+#============================================================================
 
-print("Escolha o Tipo de calculo exemplos:")
-print("multiplicacao")
 print("")
-Calculos = (input(""))
+print("Qual tipo de calculo vai utilizar: ")
+print("Exemplo: multiplicacao")
+Calculos = input("")
+
+#pergunta calculo
 
 if Calculos == "multiplicacao":
-    if (TipoMatrizX == "1:1", TipoMatrizY == "1:1"): #verificar
-        Col1Lin1Total = Col1Lin1x * Col1Lin1y
-        print("")
-        Total = print(Col1Lin1Total)
-
-    elif (TipoMatrizX == "1:1", TipoMatrizY == "1:2"): #verificar #errado
-        Col1Lin1Total = Col1Lin1x * Col1Lin1y
-        Col2Lin1Total = Col2Lin1y * Col1Lin1x
-        print (Col1Lin1Total, Col2Lin1Total)
-        print("")
-        Total = print(Col1Lin1Total, Col2Lin1Total)
-
-    elif (TipoMatrizX == "2:2", TipoMatrizY == "2:2"): #pronto
-        Col1Lin1semi1 = Col1Lin1x * Col1Lin1y
-        Col1Lin1semi2 = Col2Lin1x * Col1Lin2y
-        Col1Lin1Total = Col1Lin1semi1 + Col1Lin1semi2
-
-        Col2Lin1semi1 = Col2Lin1y * Col1Lin1x
-        Col2Lin1semi2 = Col2Lin2y * Col2Lin1x
-        Col2Lin1Total = Col2Lin1semi1 + Col2Lin1semi2
-
-        Col1Lin2semi1 = Col1Lin2x * Col2Lin1y
-        Col1Lin2semi2 = Col2Lin2x * Col2Lin2y
-        Col1Lin2Total = Col1Lin2semi1 + Col1Lin2semi2
-
-        Col2Lin2semi1 = Col2Lin2y * Col1Lin1x
-        Col2Lin2semi2 = Col2Lin1y * Col2Lin1x
-        Col2Lin2Total = Col2Lin2semi1 + Col2Lin2semi2
-
-        print("")
-        Total = print(Col1Lin1Total, Col2Lin1Total)
-        Total = print(Col1Lin2Total, Col2Lin2Total)
-
+    if (TipoMX == "1:1", TipoMX == "1:1"):
+        C1L1X * C1L1Y
