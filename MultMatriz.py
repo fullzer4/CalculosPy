@@ -1,5 +1,7 @@
 import math
 
+#Bibliotecas
+
 C1L1X = 0
 C2L1X = 0
 C3L1X = 0
@@ -118,3 +120,57 @@ Calculos = input("")
 if Calculos == "multiplicacao":
     if (TipoMX == "1:1", TipoMX == "1:1"):
         C1L1X * C1L1Y
+
+    elif (TipoMX == "1:1", TipoMX == "1:2"):
+        C1L1Tot = C1L1X * C1L1Y
+        C2L1Tot = C1L1X * C2L1Y
+
+    elif (TipoMX == "1:2", TipoMX == "1:1"): #revisar
+        C1L1Tot = C1L1X * C1L1Y
+    
+    elif (TipoMX == "1:1", TipoMX == "1:3"):
+        C1L1Tot = C1L1X * C1L1Y
+        C2L1Tot = C1L1X * C2L1Y
+        C3L1Tot = C1L1X * C3L1Y
+    
+    elif (TipoMX == "1:2", TipoMX == "1:3"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:3", TipoMX == "1:3"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:1", TipoMX == "1:4"):
+        C1L1Tot = C1L1X * C1L1Y
+        C2L1Tot = C1L1X * C2L1Y
+        C3L1Tot = C1L1X * C3L1Y
+        C4L1Tot = C1L1X * C4L1Y
+    
+    elif (TipoMX == "1:2", TipoMX == "1:4"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:3", TipoMX == "1:4"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:4", TipoMX == "1:4"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:1", TipoMX == "1:5"):
+        C1L1Tot = C1L1X * C1L1Y
+        C2L1Tot = C1L1X * C2L1Y
+        C3L1Tot = C1L1X * C3L1Y
+        C4L1Tot = C1L1X * C4L1Y
+        C5L1Tot = C1L1X * C5L1Y
+
+    elif (TipoMX == "1:2", TipoMX == "1:5"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:3", TipoMX == "1:5"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:4", TipoMX == "1:5"): #nao sei
+        C1L1X * C1L1Y
+
+    elif (TipoMX == "1:5", TipoMX == "1:5"): #nao sei
+        C1L1X * C1L1Y
+
+    #matrizes de 1
